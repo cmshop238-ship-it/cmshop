@@ -1,0 +1,6 @@
+{
+  "name": "CM | Quality Products",
+  "description": "Thương hiệu thương mại điện tử cao cấp CM - Thời trang, phụ kiện và công nghệ tối giản, tinh tế.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
