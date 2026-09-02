@@ -96,6 +96,7 @@ export const OrderTrackingPage: React.FC<OrderTrackingPageProps> = ({ initialOrd
     const statusWeights: Record<OrderStatus, number> = {
       pending: 1,
       confirmed: 2,
+      supplier_ordered: 2,
       processing: 3,
       shipping: 4,
       delivered: 5,

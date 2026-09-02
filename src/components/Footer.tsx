@@ -179,15 +179,10 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
                   Theo dõi đơn hàng
                 </button>
               </li>
-              <li>
-                <button onClick={() => onNavigate('/about')} className="hover:text-[#1A1A1A] transition-colors cursor-pointer">
-                  Hướng dẫn chọn size
-                </button>
-              </li>
-              <li>
-                <button onClick={() => onNavigate('/about')} className="hover:text-[#1A1A1A] transition-colors cursor-pointer">
-                  Bảo hành & Bảo dưỡng
-                </button>
+              <li className="pt-2 text-[11px] text-neutral-600 space-y-1">
+                <p>Hotline 24/7: <a href="tel:0798417602" className="font-bold text-[#1A1A1A] hover:underline">0798417602</a></p>
+                <p>Email: <a href="mailto:cmshop238@gmail.com" className="text-[#1A1A1A] hover:underline font-mono lowercase">cmshop238@gmail.com</a></p>
+                <p>Giờ mở cửa: <span className="font-semibold text-[#1A1A1A]">24/7 (24/24)</span></p>
               </li>
             </ul>
           </div>

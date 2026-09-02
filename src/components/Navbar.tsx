@@ -255,9 +255,10 @@ export const Navbar: React.FC<NavbarProps> = ({
 
             {/* Mobile Footer Info */}
             <div className="mt-auto pt-6 border-t border-[#E5E5E1] text-[10px] tracking-wider text-neutral-500 leading-relaxed uppercase">
-              <p className="font-bold text-[#1A1A1A]">CM QUALITY PRODUCTS</p>
-              <p>Hotline: 1900 8899 (08:00 - 22:00)</p>
-              <p>Email: concierge@cm.luxury</p>
+              <p className="font-bold text-[#1A1A1A]">CMSHOP • QUALITY PRODUCTS</p>
+              <p>Hotline: <a href="tel:0798417602" className="text-[#1A1A1A] font-semibold">0798417602</a> (24/7)</p>
+              <p>Email: <a href="mailto:cmshop238@gmail.com" className="lowercase text-[#1A1A1A]">cmshop238@gmail.com</a></p>
+              <p>Giờ mở cửa: 24/7 (24/24)</p>
             </div>
           </div>
         </div>

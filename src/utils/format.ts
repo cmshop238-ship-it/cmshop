@@ -99,13 +99,13 @@ export function getPaymentStatusInfo(status: PaymentStatus): { label: string; te
 
 /**
  * Generate VietQR Quick Link for bank transfer
- * Bank: Vietcombank (970436), Account: 9988266888, Name: CM LUXURY VIETNAM
+ * Bank: MB Bank (970422), Account: 0589614334, Name: PHAM QUANG THANH
  */
 export function getVietQRUrl(amount: number, orderId: string): string {
-  const bankId = 'VCB'; // Vietcombank
-  const accountNo = '9988266888';
+  const bankId = 'MB'; // MB Bank
+  const accountNo = '0589614334';
   const template = 'compact2';
-  const accountName = encodeURIComponent('CM LUXURY VIETNAM');
-  const memo = encodeURIComponent(`CM THANH TOAN DON HANG ${orderId}`);
+  const accountName = encodeURIComponent('PHAM QUANG THANH');
+  const memo = encodeURIComponent(`CM ${orderId}`);
   return `https://img.vietqr.io/image/${bankId}-${accountNo}-${template}.png?amount=${amount}&addInfo=${memo}&accountName=${accountName}`;
 }

@@ -538,15 +538,15 @@ const INITIAL_COUPONS: CouponModel[] = [
 ];
 
 const INITIAL_SETTINGS: StoreSettingsModel = {
-  storeName: 'CM Luxury & Quality Products',
-  hotline: '[PLACEHOLDER - Cấu hình Hotline]',
-  email: '[PLACEHOLDER - Cấu hình Email]',
-  address: '[PLACEHOLDER - Cấu hình Địa chỉ Showroom]',
-  supportHours: '[PLACEHOLDER - Cấu hình Giờ làm việc: 08:30 - 21:30]',
-  bankName: '[PLACEHOLDER - Cấu hình Tên Ngân Hàng (VD: Vietcombank, MBBank)]',
-  bankAccountNumber: '[PLACEHOLDER - Cấu hình Số Tài Khoản]',
-  bankAccountName: '[PLACEHOLDER - Cấu hình Tên Chủ Tài Khoản]',
-  bankBin: '970436', // Vietcombank BIN code
+  storeName: 'CMSHOP - CM Luxury & Quality Products',
+  hotline: '0798417602',
+  email: 'cmshop238@gmail.com',
+  address: 'Số 68 Đường Đồng Khởi, Phường Bến Nghé, Quận 1, TP. Hồ Chí Minh',
+  supportHours: '24/7 (Phục vụ 24/24)',
+  bankName: 'Ngân hàng TMCP Quân Đội (MB)',
+  bankAccountNumber: '0589614334',
+  bankAccountName: 'PHAM QUANG THANH',
+  bankBin: '970422', // MB Bank BIN code
   standardShippingFee: 30000,
   expressShippingFee: 50000,
   freeShippingThreshold: 2000000,

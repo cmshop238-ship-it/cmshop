@@ -394,12 +394,28 @@ export const CheckoutPage: React.FC<CheckoutPageProps> = ({ onNavigate }) => {
                           <span>Chuyển khoản VietQR (Khuyên dùng)</span>
                         </div>
                         <span className="text-[10px] uppercase font-semibold bg-emerald-100 text-emerald-800 px-2 py-0.5">
-                          Tự động khớp lệnh
+                          Tự động khớp lệnh 24/7
                         </span>
                       </div>
                       <p className="text-[11px] text-neutral-500 font-sans-clean mt-1">
-                        Quét mã VietQR tiện lợi qua mọi app ngân hàng (Vietcombank, MB, Techcombank...).
+                        Quét mã VietQR nhanh chóng qua ứng dụng MB Bank hoặc mọi ngân hàng (VCB, Techcombank, ACB...).
                       </p>
+                      {paymentMethod === 'bank_transfer' && (
+                        <div className="mt-3 p-3 bg-white border border-neutral-200 text-[11px] font-sans-clean text-neutral-700 space-y-1">
+                          <div className="flex justify-between">
+                            <span className="text-neutral-500">Ngân hàng:</span>
+                            <span className="font-semibold text-neutral-900">MB Bank (Quân Đội)</span>
+                          </div>
+                          <div className="flex justify-between">
+                            <span className="text-neutral-500">Số tài khoản:</span>
+                            <span className="font-mono font-bold text-neutral-900">0589614334</span>
+                          </div>
+                          <div className="flex justify-between">
+                            <span className="text-neutral-500">Chủ tài khoản:</span>
+                            <span className="font-bold text-neutral-900 uppercase">PHAM QUANG THANH</span>
+                          </div>
+                        </div>
+                      )}
                     </div>
                   </label>
 

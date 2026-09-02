@@ -110,7 +110,6 @@ export const ProductDetailPage: React.FC<ProductDetailPageProps> = ({ slug, onNa
       userName: reviewName.trim(),
       rating: reviewRating,
       comment: reviewComment.trim(),
-      verifiedPurchase: true,
     });
     setReviewName('');
     setReviewComment('');

@@ -78,7 +78,9 @@ export const ContactPage: React.FC = () => {
                   <Phone className="w-4 h-4 text-neutral-900 shrink-0 mt-0.5" />
                   <div>
                     <strong className="block text-neutral-900 font-semibold">Hotline hỗ trợ 24/7</strong>
-                    <span className="text-neutral-600">1900 6868 (Miễn phí cước gọi)</span>
+                    <a href="tel:0798417602" className="text-neutral-600 hover:text-black font-medium transition-colors">
+                      0798417602
+                    </a>
                   </div>
                 </div>
 
@@ -86,15 +88,17 @@ export const ContactPage: React.FC = () => {
                   <Mail className="w-4 h-4 text-neutral-900 shrink-0 mt-0.5" />
                   <div>
                     <strong className="block text-neutral-900 font-semibold">Email hỗ trợ</strong>
-                    <span className="text-neutral-600">concierge@cm.luxury</span>
+                    <a href="mailto:cmshop238@gmail.com" className="text-neutral-600 hover:text-black font-medium transition-colors">
+                      cmshop238@gmail.com
+                    </a>
                   </div>
                 </div>
 
                 <div className="flex items-start gap-3">
                   <Clock className="w-4 h-4 text-neutral-900 shrink-0 mt-0.5" />
                   <div>
-                    <strong className="block text-neutral-900 font-semibold">Giờ mở cửa Boutique</strong>
-                    <span className="text-neutral-600">09:00 - 21:30 (Thứ Hai - Chủ Nhật)</span>
+                    <strong className="block text-neutral-900 font-semibold">Giờ mở cửa CMSHOP</strong>
+                    <span className="text-neutral-600">24/7 (Phục vụ 24/24 - Tất cả các ngày trong tuần)</span>
                   </div>
                 </div>
               </div>

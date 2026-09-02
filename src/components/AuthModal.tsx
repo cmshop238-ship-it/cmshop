@@ -19,19 +19,19 @@ export const AuthModal: React.FC = () => {
     setIsLoading(true);
 
     if (authModalTab === 'login') {
-      if (!email) {
-        error('Vui lòng nhập email đăng nhập');
+      if (!email || !password) {
+        error('Vui lòng nhập email và mật khẩu đăng nhập');
         setIsLoading(false);
         return;
       }
-      await login(email);
+      await login(email, password);
     } else if (authModalTab === 'register') {
-      if (!email || !fullName || !phoneNumber) {
+      if (!email || !password || !fullName || !phoneNumber) {
         error('Vui lòng điền đầy đủ thông tin đăng ký');
         setIsLoading(false);
         return;
       }
-      await register(email, fullName, phoneNumber);
+      await register(email, password, fullName, phoneNumber);
     } else {
       // Forgot password flow
       success(`Hướng dẫn đặt lại mật khẩu đã được gửi đến email ${email}`);
@@ -43,9 +43,9 @@ export const AuthModal: React.FC = () => {
 
   const handleDemoLogin = (type: 'customer' | 'admin') => {
     if (type === 'admin') {
-      login('admin@cm.luxury');
+      login('admin@cmshop.online', 'CMAdmin@2026!Secure');
     } else {
-      login('thanhpham@example.com');
+      login('khachhang@cmshop.online', 'Customer@2026!Pass');
     }
   };
 

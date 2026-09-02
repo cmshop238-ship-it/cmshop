@@ -139,7 +139,7 @@ class PaymentService {
   private async clientFallbackInitiate(req: PaymentInitiateRequest): Promise<PaymentInitiateResponse> {
     await new Promise((res) => setTimeout(res, 400));
     const transferContent = `CM ${req.orderId}`;
-    const qrUrl = `https://img.vietqr.io/image/VCB-9988266888-compact2.png?amount=${req.amount}&addInfo=${encodeURIComponent(transferContent)}&accountName=${encodeURIComponent('CM LUXURY VIETNAM')}`;
+    const qrUrl = `https://img.vietqr.io/image/MB-0589614334-compact2.png?amount=${req.amount}&addInfo=${encodeURIComponent(transferContent)}&accountName=${encodeURIComponent('PHAM QUANG THANH')}`;
 
     if (req.paymentMethod === 'cod') {
       return {
@@ -156,9 +156,9 @@ class PaymentService {
         paymentId: `QR-${req.orderId}`,
         qrCodeUrl: qrUrl,
         bankDetails: {
-          bankName: 'Ngân hàng TMCP Ngoại thương Việt Nam (Vietcombank)',
-          accountNumber: '9988266888',
-          accountHolder: 'CM LUXURY VIETNAM',
+          bankName: 'Ngân hàng TMCP Quân Đội (MB)',
+          accountNumber: '0589614334',
+          accountHolder: 'PHAM QUANG THANH',
           amount: req.amount,
           transferContent: transferContent,
           qrImage: qrUrl,

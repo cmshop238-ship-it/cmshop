@@ -196,7 +196,6 @@ export const AdminDashboardPage: React.FC<AdminDashboardPageProps> = ({ onNaviga
         features: ['Chế tác thủ công cao cấp', 'Bảo hành chính hãng 12 tháng', 'Đóng gói quà tặng sang trọng'],
         specifications: { 'Thương hiệu': prodBrand || 'CM Official', 'Xuất xứ': prodOrigin || 'Việt Nam' },
         isNew: true,
-        status: 'active',
       });
     }
 

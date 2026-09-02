@@ -105,11 +105,11 @@ export const OrderSuccessPage: React.FC<OrderSuccessPageProps> = ({ orderId, onN
   };
 
   // VietQR parameters
-  const bankCode = 'MB'; // MB Bank
-  const accountNumber = '0988888888';
-  const accountHolder = 'CM LUXURY VIETNAM';
+  const bankCode = 'MB'; // MB Bank (Ngân hàng Quân Đội)
+  const accountNumber = '0589614334';
+  const accountHolder = 'PHAM QUANG THANH';
   const transferContent = `CM ${order.id}`;
-  const qrUrl = `https://img.vietqr.io/image/${bankCode}-${accountNumber}-compact.png?amount=${order.totalAmount}&addInfo=${encodeURIComponent(
+  const qrUrl = `https://img.vietqr.io/image/${bankCode}-${accountNumber}-compact2.png?amount=${order.totalAmount}&addInfo=${encodeURIComponent(
     transferContent
   )}&accountName=${encodeURIComponent(accountHolder)}`;
 
