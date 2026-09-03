@@ -12,6 +12,7 @@ import { WishlistDrawer } from './components/WishlistDrawer';
 import { SearchModal } from './components/SearchModal';
 import { QuickViewModal } from './components/QuickViewModal';
 import { AuthModal } from './components/AuthModal';
+import { FloatingContactWidget } from './components/FloatingContactWidget';
 
 import { HomePage } from './pages/HomePage';
 import { ProductsPage } from './pages/ProductsPage';
@@ -154,6 +155,7 @@ const MainApp: React.FC = () => {
       <SearchModal onNavigate={handleNavigate} />
       <QuickViewModal onNavigate={handleNavigate} />
       <AuthModal />
+      <FloatingContactWidget onNavigate={handleNavigate} />
 
       {/* Footer */}
       <Footer onNavigate={handleNavigate} />
